@@ -6,4 +6,5 @@ import com.hwan.ExBoot04.model.User;
 
 public interface UserRepository extends JpaRepository<User,Long>{
 
+	User findByUsername(String username);
 }
